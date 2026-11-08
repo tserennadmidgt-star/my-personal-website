@@ -6,7 +6,7 @@ import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
 import Books from './components/Books';
 import Movies from './components/Movies';
-import Playlist from './components/Playlist';
+import Playlist from "./components/Playlist.jsx";
 import Todo from './components/Todo';
 import Journal from './components/Journal';
 import Study from './components/Study';
