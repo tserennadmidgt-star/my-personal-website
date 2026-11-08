@@ -1,0 +1,336 @@
+/* 🌸 Navigation Tabs (Дээд талын Цэс) */
+.nav-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  background: #ffe0ea;
+  padding: 6px;
+  border-radius: 20px;
+}
+
+.tab-btn {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px;
+  border-radius: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #a0788d;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab-btn.active {
+  background: #ffffff;
+  color: #d6497a;
+  box-shadow: 0 4px 12px rgba(220, 150, 175, 0.15);
+}
+
+/* 🗓️ Plans толгой болон Filter товчлуурууд */
+.plans-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.plans-header h2 {
+  margin: 0;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 6px;
+  background: #ffffff;
+  padding: 4px;
+  border-radius: 12px;
+  border: 1px solid #ffe3ec;
+}
+
+.filter-btn {
+  border: none;
+  background: transparent;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #a0aec0;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background: #fff0f5;
+  color: #d6497a;
+  font-weight: 700;
+}
+
+/* Үндсэн CSS дээр шинэчлэгдсэн хэсгүүд */
+.todo-page {
+  max-width: 650px;
+  margin: 2rem auto;
+  padding: 30px;
+  background: #fff5f8;
+  border-radius: 32px;
+  box-shadow: 0 15px 35px rgba(235, 140, 175, 0.12);
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  color: #2d3748;
+}
+
+.todo-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.todo-header h1 {
+  margin: 0;
+  font-size: 26px;
+  color: #d6497a;
+  font-weight: 800;
+}
+
+.todo-header p {
+  margin: 4px 0 0;
+  color: #a0788d;
+  font-size: 14px;
+}
+
+.todo-progress {
+  background: #ffffff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  color: #e85d88;
+  font-weight: 700;
+  font-size: 13px;
+  border: 1.5px solid #ffd1df;
+}
+
+.todo-card {
+  background: #ffffff;
+  padding: 22px;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(220, 150, 175, 0.08);
+  border: 1px solid #ffe3ec;
+}
+
+.task-input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ffe0ea;
+  background: #fffaff;
+  border-radius: 16px;
+  padding: 13px 16px;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.2s ease;
+  color: #2d3748;
+}
+
+.task-input:focus {
+  border-color: #f687b3;
+  background: #ffffff;
+}
+
+.time-controls {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.cute-input-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: #fff8fa;
+  border: 2px solid #ffe0ea;
+  border-radius: 14px;
+  padding: 6px 12px;
+  gap: 8px;
+}
+
+.cute-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #d6497a;
+  white-space: nowrap;
+}
+
+.cute-picker {
+  width: 100%;
+  border: none;
+  background: transparent;
+  font-size: 13px;
+  color: #4a5568;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.cute-picker::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  opacity: 0.6;
+  filter: invert(45%) sepia(50%) saturate(1000%) hue-rotate(300deg);
+}
+
+.todo-controls {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.todo-controls select {
+  flex: 1;
+  border: 2px solid #ffe0ea;
+  background: #fff8fa;
+  border-radius: 14px;
+  padding: 11px 14px;
+  font-size: 13px;
+  outline: none;
+  color: #4a5568;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-btn {
+  border: none;
+  background: #ff8da1;
+  color: #ffffff;
+  padding: 11px 22px;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.add-btn:hover {
+  background: #ff6584;
+}
+
+.tasks-section h2 {
+  color: #b85074;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.empty-tasks {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  border: 2px dashed #ffd1df;
+}
+
+.empty-icon {
+  font-size: 40px;
+  margin-bottom: 6px;
+}
+
+.empty-tasks p {
+  font-size: 16px;
+  color: #2d3748;
+  margin: 2px;
+  font-weight: 700;
+}
+
+.empty-tasks span {
+  color: #a0aec0;
+  font-size: 13px;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #ffffff;
+  padding: 14px 18px;
+  border-radius: 18px;
+  border: 1px solid #ffe3ec;
+  transition: all 0.2s ease;
+}
+
+.task-card.completed {
+  opacity: 0.55;
+  background: #fffafd;
+}
+
+.check-button {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #ffb6c1;
+  background: #fff0f5;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.completed .check-button {
+  background: #ff8da1;
+  border-color: #ff8da1;
+}
+
+.task-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.task-text {
+  color: #2d3748;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.completed .task-text {
+  text-decoration: line-through;
+  color: #a0aec0;
+}
+
+.task-details {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.priority {
+  font-size: 11px;
+  font-weight: 600;
+  color: #718096;
+}
+
+.cute-badge {
+  font-size: 11px;
+  color: #d6497a;
+  background: #fff0f5;
+  padding: 2px 8px;
+  border-radius: 8px;
+  font-weight: 700;
+  border: 1px solid #ffd6e3;
+}
+
+.delete-button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.delete-button:hover {
+  opacity: 1;
+  transform: scale(1.15);
+}
