@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-import Login from './components/Login';
-import Sidebar from './components/Sidebar';
-import Dashboard from './components/Dashboard';
-import Books from './components/Books';
-import Movies from './components/Movies';
-import Playlist from "./components/Playlist.jsx";
-import Todo from './components/Todo';
-import Journal from './components/Journal';
-import Study from './components/Study';
-import Habits from './components/Habits';
-import Ideas from './components/Ideas';
-import Settings from './components/Settings';
+import Login from './components/Login.jsx';
+import Sidebar from './components/Sidebar.jsx';
+import Dashboard from './components/Dashboard.jsx';
+import Books from './components/Books.jsx';
+import Movies from './components/Movies.jsx';
+import Playlist from './components/Playlist.jsx';
+import Todo from './components/Todo.jsx';
+import Journal from './components/Journal.jsx';
+import Study from './components/Study.jsx';
+import Habits from './components/Habits.jsx';
+import Ideas from './components/Ideas.jsx';
+import Settings from './components/Settings.jsx';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
